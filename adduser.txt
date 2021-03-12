@@ -1,0 +1,24 @@
+if the user exits in user table..
+	find the action
+	if add
+		user already exits.
+	if update
+		find the role and then in Hierarchy table
+		if it exits 
+			update in both table  and return.
+		else
+			user doen't exits
+else
+	find action
+	if update
+		user doesn't exits.
+	if add
+		find the role and then in Hierarchy table
+		if it exits
+			add to user table
+			return can't add it already exits
+		else
+			find the role and then add it in the heriarchy and user table, generate the 				password and send a mail.
+      			then return with sucess.
+	
+ 
