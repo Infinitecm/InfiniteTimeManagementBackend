@@ -7,10 +7,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
 @SpringBootApplication
 @EnableMongoRepositories
 
-public class TMApplication {
+public class TMApplication extends SpringBootServletInitializer
+ {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TMApplication.class, args);

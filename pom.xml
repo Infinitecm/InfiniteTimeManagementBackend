@@ -11,7 +11,7 @@
 	<groupId>com.infinite</groupId>
 	<artifactId>TimeManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging> 
+	<packaging>war</packaging> 
 	<name>TimeManagement</name>
 	<description>Infinite Time Management</description>
 
@@ -34,7 +34,12 @@
     <artifactId>spring-data-mongodb</artifactId>
     <version>3.0.4.RELEASE</version>
 </dependency>
-		
+		<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-tomcat</artifactId>
+   <scope>provided</scope>
+</dependency>
+ 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
