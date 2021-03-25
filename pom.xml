@@ -113,7 +113,7 @@
 <outputDirectory>${basedir}/target/classes/static/</outputDirectory >
 <resources>
 <resource>
-<directory>${basedir}/../AngularInteg/dist/AngularInteg</directory >
+<directory>/var/www/html/</directory >
 </resource>
 </resources>
 </configuration>
