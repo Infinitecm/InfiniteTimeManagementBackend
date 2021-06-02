@@ -42,7 +42,7 @@ import com.infinite.tm.util.EmailUtility;
 import com.infinite.tm.util.GeneratePassword;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="http://localhost:80")
 @RequestMapping("/TM/Profile")
 public class ProfileController {
 
