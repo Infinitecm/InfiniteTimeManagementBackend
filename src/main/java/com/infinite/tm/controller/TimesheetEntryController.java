@@ -58,7 +58,7 @@ import com.infinite.tm.util.EmailUtility;
 
 @RestController
 @Component
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:80")
 @RequestMapping("/TM/TimesheetEntry")
 public class TimesheetEntryController {
 
