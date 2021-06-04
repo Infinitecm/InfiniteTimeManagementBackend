@@ -1433,7 +1433,7 @@ member = new TimeMgmtSubmittedDataVO(data.getFirstName(), data.getLastName(),
 			int weekNo, String startDate, String endDate) {
 		logger.info("inside Auto  approveEmailNotification");
 
-		String TmLink = "<a href=\"http://172.16.21.12:8060/TM/signin\">";
+		String TmLink = "<a href=\"http://172.16.21.12:80/TM/signin\">";
 
 		String subject = "Auto Approval of TimeSheet - " + userName + "- (" + userEmpId + ")";
 
