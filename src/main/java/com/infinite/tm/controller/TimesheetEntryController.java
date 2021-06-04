@@ -58,7 +58,7 @@ import com.infinite.tm.util.EmailUtility;
 
 @RestController
 @Component
-@CrossOrigin(origins = "http://172.16.21.12:80")
+@CrossOrigin(origins = "http://172.16.21.12:8060")
 @RequestMapping("/TM/TimesheetEntry")
 public class TimesheetEntryController {
 
@@ -1433,7 +1433,7 @@ member = new TimeMgmtSubmittedDataVO(data.getFirstName(), data.getLastName(),
 			int weekNo, String startDate, String endDate) {
 		logger.info("inside Auto  approveEmailNotification");
 
-		String TmLink = "<a href=\"http://172.16.21.12:80/TM/signin\">";
+		String TmLink = "<a href=\"http://172.16.21.12:8060/TM/signin\">";
 
 		String subject = "Auto Approval of TimeSheet - " + userName + "- (" + userEmpId + ")";
 
@@ -1597,9 +1597,9 @@ member = new TimeMgmtSubmittedDataVO(data.getFirstName(), data.getLastName(),
 		String subject = "TM Submission - " + data.getFirstName() + " " + data.getLastName() + "- (" + startDate + " - "
 				+ endDate + ")";
 
-		String approveLink = "<a href=\"http://172.16.21.12:80/TM/TimesheetEntry/approveTimesheetDetails?email=" + email
+		String approveLink = "<a href=\"http://172.16.21.12:8060/TM/TimesheetEntry/approveTimesheetDetails?email=" + email
 				+ "&weekNo=" + weekNo + "&startDate=" + startDate + "&endDate=" + endDate + "&approverRole=lead\">";
-		String rejectLink = "<a href=\"http://172.16.21.12:80/TM/TimesheetEntry/rejectTimesheetDetails?email=" + email
+		String rejectLink = "<a href=\"http://172.16.21.12:8060/TM/TimesheetEntry/rejectTimesheetDetails?email=" + email
 				+ "&weekNo=" + weekNo + "&startDate=" + startDate + "&endDate=" + endDate + "&approverRole=lead\">";
 
 		StringBuilder builder = new StringBuilder();
